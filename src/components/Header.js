@@ -17,7 +17,7 @@ const Header = () => {
         onClick={() => alert("Right btn clicked!")}
         className={styles.rightAngleIcon}
       />
-      <span className={styles.date}>Mon, 25 Nov 2018</span>
+      <span className={styles.date}>HACK-DAY</span>
     </div>
   );
 };

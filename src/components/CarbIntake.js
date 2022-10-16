@@ -59,9 +59,7 @@ const CarbIntake = (props) => {
         )}
       </ImageUploading>
       <p>
-        Carb is not essential but it is the bodies preferred energy source,
-        especially during stress and exercise. When glycogen levels get low in
-        the body, cortisol levels rise.
+        Upload images of bus-passes/public-transport tickets/ your regular meal to get carbon credits.
       </p>
     </div>
   );

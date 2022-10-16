@@ -10,9 +10,7 @@ const FatIntake = (props) => {
       <FontAwesomeIcon icon={faFeather} />
       <p></p>
       <p>
-        Fats is needed for hormone production, cholesterol and cell membrane
-        formation, protect organs, supply vitamins (A,D,E,K) and gives the main
-        energy source for the body at rest.
+        What are our option? Is the world beyond saving?
       </p>
     </div>
   );
