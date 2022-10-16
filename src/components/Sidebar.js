@@ -17,8 +17,8 @@ const NavLink = (props) => {
       getProps={({ isCurrent }) => {
         return isCurrent
           ? {
-              className: styles.active,
-            }
+            className: styles.active,
+          }
           : null;
       }}
     />
@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
   }
 
   render() {
-    const { fullName, gender, age, height, weight } = this.props.data;
+    const { fullName, cci } = this.props.data;
 
     return (
       <div className={styles.sidebar}>
@@ -44,12 +44,9 @@ class Sidebar extends React.Component {
             <span>{fullName}</span>
             <br />
             <span>
-              {gender} | {age} Years
+              {cci}
             </span>
             <br />
-            <span>
-              Height : {height} cm | Weight : {weight} Kg
-            </span>
           </div>
           <svg className={classnames(styles.hLine)}>
             <line
@@ -91,7 +88,28 @@ class Sidebar extends React.Component {
                     icon={faClipboardList}
                     className={classnames(styles.icon, "fa-fw")}
                   />
-                  Food Log
+                  Carbon Emission Log
+                </NavLink>
+              </li>
+              <li>
+                <svg className={classnames(styles.hLine)}>
+                  <line
+                    x1="0"
+                    x2="100%"
+                    y1="2"
+                    y2="2"
+                    stroke="#009261b5"
+                    strokeWidth="3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <NavLink to="/food-log">
+                  <FontAwesomeIcon
+                    icon={faClipboardList}
+                    className={classnames(styles.icon, "fa-fw")}
+                  />
+                  Activity Log
                 </NavLink>
               </li>
               <li>

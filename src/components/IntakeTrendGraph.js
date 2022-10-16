@@ -5,7 +5,7 @@ import Trend from "react-trend";
 const ProteinIntake = () => {
   return (
     <div className={styles.item}>
-      <h2>Calorie intake trend over time</h2>
+      <h2>Your Carbon Emission Trend</h2>
       <br />
       <Trend
         smooth

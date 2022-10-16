@@ -7,19 +7,16 @@ class GetStartedForm extends React.Component {
     super(props);
     this.state = {
       fullName: "",
-      gender: "",
-      age: null,
-      height: null,
-      weight: null,
+      cci: ""
     };
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const { fullName, gender, age, height, weight } = this.state;
-    if (fullName && gender && age && height && weight) {
+    const { fullName, cci } = this.state;
+    if (fullName && cci) {
       navigate("/overview", {
-        state: { fullName, gender, age, height, weight },
+        state: { fullName, cci },
       });
     } else {
       alert("All fields are required!");
@@ -32,27 +29,15 @@ class GetStartedForm extends React.Component {
     });
   }
 
-  handleGenderChange(e) {
+  handleCCIChange(e) {
     this.setState({
-      gender: e.target.value,
+      cci: e.target.value,
     });
   }
 
   handleAgeChange(e) {
     this.setState({
       age: e.target.value,
-    });
-  }
-
-  handleHeightChange(e) {
-    this.setState({
-      height: e.target.value,
-    });
-  }
-
-  handleWeightChange(e) {
-    this.setState({
-      weight: e.target.value,
     });
   }
 
@@ -75,68 +60,13 @@ class GetStartedForm extends React.Component {
             </label>
             {/* eslint-disable-next-line */}
             <label htmlFor="gender" className={styles.entryLabel}>
-              Gender :
-              <select id="gender" onBlur={(e) => this.handleGenderChange(e)}>
-                <option>Male</option>
-                <option>Female</option>
-              </select>
-            </label>
-            <label htmlFor="age" className={styles.entryLabel}>
-              Age :
+              CarbonCreditId (CCI):
               <input
-                type="number"
-                placeholder="e.g. 20"
-                min="18"
-                onChange={(e) => this.handleAgeChange(e)}
+                type="text"
+                id="cci"
+                autoFocus
+                onChange={(e) => this.handleCCIChange(e)}
               />
-            </label>
-            <label htmlFor="height" className={styles.entryLabel}>
-              Height :
-              <input
-                type="number"
-                id="height"
-                placeholder="e.g. 150"
-                min="0"
-                onChange={(e) => this.handleHeightChange(e)}
-              />
-              <div className={styles.unitToggle}>
-                <fieldset className={styles.radioSwitch}>
-                  <legend>Height Unit</legend>
-                  <input type="radio" name="height" id="ft" />
-                  <label htmlFor="ft" className="switchLabel">
-                    Feet
-                  </label>
-
-                  <input type="radio" name="height" id="cm" />
-                  <label htmlFor="cm" className="switchLabel">
-                    Cm
-                  </label>
-                </fieldset>
-              </div>
-            </label>
-            <label htmlFor="weight" className={styles.entryLabel}>
-              Weight :
-              <input
-                type="number"
-                id="weight"
-                placeholder="e.g. 160"
-                min="0"
-                onChange={(e) => this.handleWeightChange(e)}
-              />
-              <div className={styles.unitToggle}>
-                <fieldset className={styles.radioSwitch}>
-                  <legend>Height Unit</legend>
-                  <input type="radio" name="weight" id="lbs" />
-                  <label htmlFor="lbs" className="switchLabel">
-                    Lbs
-                  </label>
-
-                  <input type="radio" name="weight" id="kg" />
-                  <label htmlFor="kg" className="switchLabel">
-                    Kg
-                  </label>
-                </fieldset>
-              </div>
             </label>
             <button className={styles.submitBtn} />
           </form>

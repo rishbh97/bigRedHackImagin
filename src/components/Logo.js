@@ -8,7 +8,7 @@ const Logo = () => {
     <div className={styles.logo}>
       <Link to="/overview" className={styles.link}>
         <img src={logo} alt="logo" id={styles.logo} />
-        Nutrition Tracker
+        Carbon Credit Tracker
       </Link>
     </div>
   );
