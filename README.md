@@ -22,3 +22,7 @@ Other:
 - [Yarn](https://yarnpkg.com): JavaScript package manager
 - [ESLint](https://eslint.org): JavaScript and JSX code style
 - [Netlify](https://netlify.com): static site host
+
+## Backend integration
+- Install tensorflow/keras
+- run code: python main.py
