@@ -1,12 +1,7 @@
-# nutrition-tracker-react
-[WIP]
+#Carbon Credit Tracker
 
-<img alt="form screenshot" src="https://res.cloudinary.com/ddbyzw2mz/image/upload/v1565733885/Screen_Shot_2019-08-13_at_11.01.40_PM.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" />
-<img alt="homepage screenshot" src="https://res.cloudinary.com/ddbyzw2mz/image/upload/v1565734538/Screen_Shot_2019-08-13_at_11.14.17_PM.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="500" />
+Borrowed code from https://github.com/mrassili/nutrition-tracker-react to create the website for Carbon Credit Tracker and changed according to the need.
 
-This is a nutrition tracking web app that will feature user's nutrients intake control, a database/API of foods to choose from, food logging and weight progress graph.
-
-The project is live on [Netlify](https://wonderful-bell-793a13.netlify.com/). Just put in some data in the form and press Enter to access the dashboard interface.
 
 ## Getting Started
 
